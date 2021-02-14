@@ -1,0 +1,32 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dashjs": "2.7.0",
+    "http-server": "0.12.3",
+    "safe-buffer": "5.2.1",
+    "shaka-player": "2.5.20",
+    "stream-browserify": "3.0.0",
+    "util": "0.12.3"
+  },
+  "scripts": {
+    "dev:unix": "NODE_ENV=development && webpack serve --mode=development",
+    "dev:win": "SET NODE_ENV=development && webpack serve --mode=development",
+    "dev": "yarn run dev:win",
+    "server": "yarn http-server static -p 3005 --cors"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "eslint": "7.20.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.3.1",
+    "html-webpack-plugin": "5.1.0",
+    "webpack": "5.21.2",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2"
+  }
+}
