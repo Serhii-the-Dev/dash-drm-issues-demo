@@ -10,7 +10,8 @@
 
 1. Install dependencies via `yarn`
 2. Launch HTTP server to serve static content(manifest) via `yarn server`
-3. Launch dev server via `yarn dev:win` or `yarn dev:unix` depending on which OS you are running the app
+3. Replace path to the manifest in the [index.js](./app/index.js): `startPlayer('http://YOUR_IP_GOES_HERE:3005/1/manifest.mpd')`
+4. Launch dev server via `yarn dev:win` or `yarn dev:unix` depending on which OS you are running the app
 
 ## Manifests
 
